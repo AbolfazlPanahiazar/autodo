@@ -3,7 +3,9 @@
   <ol>
     <li>
       <input type="checkbox" checked.bind="todo.done" />
-      ${todo.description}
+      <span css="text-decoration: ${todo.done ? 'line-through' : 'none'}"
+        >${todo.description}</span
+      >
     </li>
   </ol>
 </template>
